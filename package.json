@@ -1,0 +1,49 @@
+{
+  "name": "quarry-dns",
+  "version": "0.5.0",
+  "description": "A rock solid, dynamic DNS server with swappable backends and CRUD API",
+  "main": "application.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/growbrosops/quarry.git"
+  },
+  "keywords": [
+    "dns",
+    "cli",
+    "memory",
+    "dynamic",
+    "quarry",
+    "api",
+    "redis",
+    "mongo",
+    "disk"
+  ],
+  "author": "Norman Joyner <norman.joyner@gmail.com>",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/growbrosops/quarry/issues"
+  },
+  "homepage": "https://github.com/growbrosops/quarry",
+  "dependencies": {
+    "async": "^0.9.0",
+    "aws-sdk": "^2.0.30",
+    "body-parser": "^1.10.0",
+    "express": "^4.10.4",
+    "lodash": "^2.4.1",
+    "mongodb": "^1.4.23",
+    "native-dns": "^0.7.0",
+    "node-statsd": "^0.1.0",
+    "nomnom": "^1.8.1",
+    "redis": "^0.12.1",
+    "winston": "^0.8.3"
+  },
+  "bin": {
+    "quarry": "./cli.js"
+  }
+}
