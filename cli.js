@@ -19,7 +19,7 @@ _.each(available_configs, function(config){
 
 // set options
 var disk_options = _.defaults(_.clone(configuration.default), _.clone(configuration.disk));
-var memory_options = _.defaults(_.clone(configuration.default), _.close(configuration.memory));
+var memory_options = _.defaults(_.clone(configuration.default), _.clone(configuration.memory));
 var mongo_options = _.defaults(_.clone(configuration.default), _.clone(configuration.mongo));
 var redis_options = _.defaults(_.clone(configuration.default), _.clone(configuration.redis));
 var s3_options = _.defaults(_.clone(configuration.default), _.clone(configuration.s3));
