@@ -209,22 +209,28 @@ quarry.persistence.get_configuration(function(err, configuration){
 ```
 
 #### Create Forwarder
+```javascript
 quarry.persistence.create_forwarder("8.8.8.8", { timeout: 500, port: 53 }, function(err){
     if(err)
         throw err;
 });
+```
 
 #### Update Forwarder
+```javascript
 quarry.persistence.update_forwarder("8.8.8.8", { timeout: 1000, port: 53 }, function(err){
     if(err)
         throw err;
 });
+```
 
 #### Delete Forwarder
+```javascript
 quarry.persistence.delete_forwarder("8.8.8.8", function(err){
     if(err)
         throw err;
 });
+```
 
 ## Contributing
 Please feel free to contribute by opening issues and creating pull requests!
