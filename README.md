@@ -4,7 +4,7 @@ quarry
 ## About
 
 ### Description
-A rock solid, dynamic DNS server with swappable backends and CRUD API. Start Quarry with one of the available persistence layers and manage records and forwarders through a the API. Quarry can also be accessed programmatically by requiring it in your code!
+A rock solid, dynamic DNS server with swappable backends and CRUD API. Start Quarry with one of the available persistence layers and manage records and forwarders through the API. Quarry can also be accessed programmatically by requiring it in your code!
 
 ### Author
 * Norman Joyner - norman.joyner@gmail.com
