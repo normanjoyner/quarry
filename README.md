@@ -146,85 +146,85 @@ var quarry = new Quarry({
 
 #### Get Records
 ```javascript
-    quarry.get_configuration(function(err, configuration){
-        if(err)
-            throw err;
+quarry.persistence.get_configuration(function(err, configuration){
+    if(err)
+        throw err;
 
-        var records = configuration.records;
-    });
+    var records = configuration.records;
+});
 ```
 
 #### Get Record
 ```javascript
-    quarry.get_configuration(function(err, configuration){
-        if(err)
-            throw err;
+quarry.persistence.get_configuration(function(err, configuration){
+    if(err)
+        throw err;
 
-        var record = configuration.records["www.domain.com"];
-    });
+    var record = configuration.records["www.domain.com"];
+});
 ```
 
 #### Create Record
 ```javascript
-    quarry.create_record("www.domain.com", { address: "1.2.3.4", type: "A", ttl: 60 }, function(err){
-        if(err)
-            throw err;
-    });
+quarry.persistence.create_record("www.domain.com", { address: "1.2.3.4", type: "A", ttl: 60 }, function(err){
+    if(err)
+        throw err;
+});
 ```
 
 #### Update Record
 ```javascript
-    quarry.update_record("www.domain.com", { address: ["1.2.3.4", "5.6.7.8"], type: "A", ttl: 60 }, function(err){
-        if(err)
-            throw err;
-    });
+quarry.persistence.update_record("www.domain.com", { address: ["1.2.3.4", "5.6.7.8"], type: "A", ttl: 60 }, function(err){
+    if(err)
+        throw err;
+});
 ```
 
 #### Delete Record
 ```javascript
-    quarry.delete_record("www.domain.com", function(err){
-        if(err)
-            throw err;
-    });
+quarry.persistence.delete_record("www.domain.com", function(err){
+    if(err)
+        throw err;
+});
 ```
 
 #### Get Forwarders
 ```javascript
-    quarry.get_configuration(function(err, configuration){
-        if(err)
-            throw err;
+quarry.persistence.get_configuration(function(err, configuration){
+    if(err)
+        throw err;
 
-        var forwarders = configuration.forwarders;
-    });
+    var forwarders = configuration.forwarders;
+});
 ```
 
 #### Get Forwarder
 ```javascript
-    quarry.get_configuration(function(err, configuration){
-        if(err)
-            throw err;
+quarry.persistence.get_configuration(function(err, configuration){
+    if(err)
+        throw err;
 
-        var forwarder = configuration.forwarders["8.8.8.8"];
-    });
+    var forwarder = configuration.forwarders["8.8.8.8"];
+});
 ```
 
 #### Create Forwarder
-    quarry.create_forwarder("8.8.8.8", { timeout: 500, port: 53 }, function(err){
-        if(err)
-            throw err;
-    });
+quarry.persistence.create_forwarder("8.8.8.8", { timeout: 500, port: 53 }, function(err){
+    if(err)
+        throw err;
+});
 
 #### Update Forwarder
-    quarry.update_forwarder("8.8.8.8", { timeout: 1000, port: 53 }, function(err){
-        if(err)
-            throw err;
-    });
+quarry.persistence.update_forwarder("8.8.8.8", { timeout: 1000, port: 53 }, function(err){
+    if(err)
+        throw err;
+});
 
 #### Delete Forwarder
-    quarry.delete_forwarder("8.8.8.8", function(err){
-        if(err)
-            throw err;
-    });
+quarry.persistence.delete_forwarder("8.8.8.8", function(err){
+    if(err)
+        throw err;
+});
 
 ## Contributing
 Please feel free to contribute by opening issues and creating pull requests!
