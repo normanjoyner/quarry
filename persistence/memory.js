@@ -55,7 +55,7 @@ module.exports = {
         if(_.has(this.forwarders, name))
             return this.return_error({code: 400, body: "Forwarder already exists!"}, fn);
         else{
-            this.forwarders[name] = record;
+            this.forwarders[name] = forwarder;
             return this.server.update_configuration(fn);
             return fn();
         }
@@ -65,7 +65,7 @@ module.exports = {
         if(!_.has(this.forwarders, name))
             return this.return_error({code: 404, body: "Forwarder not found!"}, fn)
         else{
-            this.forwarders[name] = record;
+            this.forwarders[name] = forwarder;
             return this.server.update_configuration(fn);
             return fn();
         }
