@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/growbrosops/quarry.git"
+    "url": "https://github.com/containership/quarry.git"
   },
   "keywords": [
     "dns",
@@ -25,11 +25,11 @@
     "disk"
   ],
   "author": "Norman Joyner <norman.joyner@gmail.com>",
-  "license": "GPLv2",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/growbrosops/quarry/issues"
+    "url": "https://github.com/containership/quarry/issues"
   },
-  "homepage": "https://github.com/growbrosops/quarry",
+  "homepage": "https://github.com/containership/quarry",
   "dependencies": {
     "async": "^0.9.0",
     "aws-sdk": "^2.0.30",
