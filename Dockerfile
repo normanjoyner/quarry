@@ -12,8 +12,11 @@ RUN apt-get update && apt-get install -y npm curl
 RUN npm install n -g
 RUN n 0.10.35
 
+# add code
+ADD . /app
+
 # install dependencies
-RUN npm install quarry-dns@0.5.2 -g
+RUN cd /app; npm install -g
 
 # set entrypoint
 ENTRYPOINT ["quarry"]
