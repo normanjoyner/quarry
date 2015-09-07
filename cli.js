@@ -4,6 +4,7 @@ var _ = require("lodash");
 var dns = require("native-dns");
 var nomnom = require("nomnom");
 var pkg = require([__dirname, "package"].join("/"));
+var utils = require([__dirname, "lib", "utils"].join("/"));
 var logger = require([__dirname, "lib", "logger"].join("/"));
 var statsd = require([__dirname, "lib", "statsd"].join("/"));
 var Server = require([__dirname, "lib", "server"].join("/"));
@@ -35,7 +36,7 @@ nomnom.command("s3").options(s3_options);
 nomnom.script("quarry");
 
 // parse options
-var options = nomnom.parse();
+var options = nomnom.parse(utils.parse_env_vars());
 
 // init logger
 logger.initialize(_.pick(options, "log-level"));
