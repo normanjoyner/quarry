@@ -52,5 +52,17 @@ module.exports = {
         metavar: "LEVEL",
         choices: ["silly", "debug", "verbose", "info", "warn", "error"],
         default: "info"
+    },
+
+    "redis-log-host": {
+        help: "Address of redis log server",
+        metavar: "HOST",
+        required: false
+    },
+
+    "redis-log-port": {
+        help: "Port of redis log server",
+        metavar: "PORT",
+        required: false
     }
 }

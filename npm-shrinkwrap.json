@@ -507,6 +507,18 @@
           "resolved": "https://registry.npmjs.org/stack-trace/-/stack-trace-0.0.9.tgz"
         }
       }
+    },
+    "winston-redis": {
+      "version": "1.0.0",
+      "from": "winston-redis@",
+      "resolved": "https://registry.npmjs.org/winston-redis/-/winston-redis-1.0.0.tgz",
+      "dependencies": {
+        "async": {
+          "version": "1.4.2",
+          "from": "async@^1.2.1",
+          "resolved": "https://registry.npmjs.org/async/-/async-1.4.2.tgz"
+        }
+      }
     }
   }
 }
