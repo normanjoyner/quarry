@@ -39,7 +39,12 @@ nomnom.script("quarry");
 var options = nomnom.parse(utils.parse_env_vars());
 
 // init logger
-logger.initialize(_.pick(options, "log-level"));
+logger.initialize(_.pick(options, [
+    "log-level",
+    "redis-log-host",
+    "redis-log-port",
+]));
+
 logger.log("info", ["Starting Quarry version", pkg.version].join(" "));
 
 // init statsd
