@@ -24,7 +24,7 @@
     "mongo",
     "disk"
   ],
-  "author": "Norman Joyner <norman.joyner@gmail.com>",
+  "author": "ContainerShip Developers <developers@containership.io>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/containership/quarry/issues"
