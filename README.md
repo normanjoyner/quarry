@@ -59,34 +59,34 @@ When requiring Quarry as a module, records and forwarders are managed through ex
 ```sudo quarry s3 --access-key-id $AWS_ACCESS_KEY_ID --secret-access-key $AWS_SECRET_ACCESS_KEY --bucket quarry```
 
 #### Get Records
-```curl http://quary.server:5353/v1/records -X GET -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/records -X GET -H "Content-Type: application/json"```
 
 #### Get Record
-```curl http://quary.server:5353/v1/records/www.domain.com -X GET -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/records/www.domain.com -X GET -H "Content-Type: application/json"```
 
 #### Create Record
-```curl http://quary.server:5353/v1/records/www.domain.com -X POST -d '{"address": "1.2.3.4", "type": "A", "ttl": 60}' -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/records/www.domain.com -X POST -d '{"address": "1.2.3.4", "type": "A", "ttl": 60}' -H "Content-Type: application/json"```
 
 #### Update Record
-```curl http://quary.server:5353/v1/records/www.domain.com -X PUT -d '{"address": ["1.2.3.4", "5.6.7.8"], "type": "A", "ttl": 60}' -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/records/www.domain.com -X PUT -d '{"address": ["1.2.3.4", "5.6.7.8"], "type": "A", "ttl": 60}' -H "Content-Type: application/json"```
 
 #### Delete Record
-```curl http://quary.server:5353/v1/records/www.domain.com -X DELETE```
+```curl http://quarry.server:5353/v1/records/www.domain.com -X DELETE```
 
 #### Get Forwarders
-```curl http://quary.server:5353/v1/forwarders -X GET -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/forwarders -X GET -H "Content-Type: application/json"```
 
 #### Get Forwarder
-```curl http://quary.server:5353/v1/forwarders/8.8.8.8 -X GET -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/forwarders/8.8.8.8 -X GET -H "Content-Type: application/json"```
 
 #### Create Forwarder
-```curl http://quary.server:5353/v1/forwarders/8.8.8.8 -X POST -d '{"timeout": 500, "port": 53}' -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/forwarders/8.8.8.8 -X POST -d '{"timeout": 500, "port": 53}' -H "Content-Type: application/json"```
 
 #### Update Forwarder
-```curl http://quary.server:5353/v1/forwarders/8.8.8.8 -X PUT -d '{"timeout": 1000, "port": 53}' -H "Content-Type: application/json"```
+```curl http://quarry.server:5353/v1/forwarders/8.8.8.8 -X PUT -d '{"timeout": 1000, "port": 53}' -H "Content-Type: application/json"```
 
 #### Delete Forwarder
-```curl http://quary.server:5353/v1/forwarders/8.8.8.8 -X DELETE```
+```curl http://quarry.server:5353/v1/forwarders/8.8.8.8 -X DELETE```
 
 ### Module
 ```javascript
